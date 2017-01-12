@@ -2,9 +2,6 @@ package com.liyuhao.entity;
 
 public class Admin implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String name;
