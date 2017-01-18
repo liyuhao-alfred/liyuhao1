@@ -42,6 +42,13 @@ public class AdminTest extends AbstractJUnit4SpringContextTests {
 		String password = "1881412743";
 
 		List<Admin> list = adminService.find(name, password);
+		list = null;
+		try {
+			System.out.println(list.get(1));
+		} catch (Exception e) {
+			log.error(e);
+		}
+
 		for (int i = 0; i < list.size(); i++) {
 			Admin admin = list.get(0);
 			log.info(admin);
