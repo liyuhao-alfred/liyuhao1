@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devModel" value="true"></constant>
+	<constant name="struts.objectFactory" value="spring"></constant>
+
+	<package name="liyuhao" extends="struts-default">
+		<global-results>
+			<result name="login">/login.jsp</result>
+		</global-results>
+		<action name="login" class="com.liyuhao.action.AdminAction"
+			method="login">
+			<result name="success">/success.jsp</result>
+		</action>
+	</package>
+	<package name="1" namespace="/1" extends="struts-default">
+		<action name="1_*" class="com.liyuhao.action.AdminAction"
+			method="{1}">
+			<result name="success">/success.jsp</result>
+		</action>
+	</package>
+</struts>    
