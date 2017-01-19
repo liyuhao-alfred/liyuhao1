@@ -2,6 +2,8 @@ package com.liyuhao.dao;
 
 import java.util.List;
 
+import org.springframework.context.ApplicationContext;
+
 import com.liyuhao.entity.Admin;
 
 public interface AdminDao {
@@ -35,7 +37,7 @@ public interface AdminDao {
 	 * @param name
 	 * @return
 	 */
-	public List<Admin> find(String name, String password);
+	public List find(String name, String password);
 
 	/**
 	 * 更新管理员

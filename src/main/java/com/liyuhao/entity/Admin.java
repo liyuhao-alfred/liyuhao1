@@ -1,11 +1,14 @@
 package com.liyuhao.entity;
 
+import javax.persistence.Version;
+
 public class Admin implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String name;
 	private String password;
+	private Integer version;
 
 	public Admin() {
 	}
@@ -44,4 +47,11 @@ public class Admin implements java.io.Serializable {
 		return "Admin [id=" + id + ", name=" + name + ", password=" + password + "]";
 	}
 
+	public int getVersion() {
+		return version;
+	}
+
+	public void setVersion(int version) {
+		this.version = version;
+	}
 }

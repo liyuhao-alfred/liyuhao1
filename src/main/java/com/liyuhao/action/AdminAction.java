@@ -27,7 +27,6 @@ public class AdminAction extends ActionSupport {
 		String password = ServletActionContext.getRequest().getParameter("password");
 
 		Admin admin = adminService.login(name, password);
-		// 打印admin
 		log.info(admin);
 		// 如果没有取到数据，则返回继续登录页面，取到数据则返回成功页面并且直接显示
 		if (admin == null) {

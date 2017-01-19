@@ -8,6 +8,9 @@
 			<column name="id" />
 			<generator class="increment" />
 		</id>
+		<version name="version" type="java.lang.Integer">
+			<column name="version" length="20" />
+		</version>
 		<property name="name" type="java.lang.String">
 			<column name="name" length="20" />
 		</property>
