@@ -207,13 +207,7 @@
 			<version>1.2</version>
 		</dependency>
 
-	<!-- BC 生成证书 -->
-		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bctsp-jdk16</artifactId>
-			<version>1.46</version>
-			<type>pom.sig</type>
-		</dependency>
+
 	</dependencies>
 
 	<build>

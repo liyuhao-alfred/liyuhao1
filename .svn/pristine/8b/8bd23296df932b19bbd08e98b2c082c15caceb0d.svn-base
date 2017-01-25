@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.liyuhao1</groupId>
-	<artifactId>liyuhao1</artifactId>
+	<groupId>com.liyuhao3</groupId>
+	<artifactId>liyuhao3</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>liyuhao1</name>
+	<name>liyuhao3</name>
 	<url>http://maven.apache.org</url>
 
 
@@ -114,32 +114,6 @@
 			<version>${struts2.version}</version>
 		</dependency>
 
-		<!-- httpclient -->
-		<dependency>
-			<groupId>commons-logging</groupId>
-			<artifactId>commons-logging</artifactId>
-			<version>1.1.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.4</version>
-		</dependency>
-
-		<dependency>
-			<groupId>commons-httpclient</groupId>
-			<artifactId>commons-httpclient</artifactId>
-			<version>3.0.1</version>
-		</dependency>
-
-		<!-- 配置返回json -->
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-json-plugin</artifactId>
-			<version>2.3.8</version>
-		</dependency>
-
 		<!-- log4j -->
 		<dependency>
 			<groupId>log4j</groupId>
@@ -207,17 +181,11 @@
 			<version>1.2</version>
 		</dependency>
 
-	<!-- BC 生成证书 -->
-		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bctsp-jdk16</artifactId>
-			<version>1.46</version>
-			<type>pom.sig</type>
-		</dependency>
+
 	</dependencies>
 
 	<build>
-		<finalName>liyuhao1</finalName>
+		<finalName>liyuhao3</finalName>
 
 		<plugins>
 			<!-- Run the JUnit unit tests in an isolated classloader -->
